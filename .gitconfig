@@ -1,0 +1,31 @@
+[core]
+	editor = vim
+	autocrlf = false
+	excludesFile = C:\\Users\\Nancy\\.gitignore
+[commit]
+	template = C:\\Dev\\Misc\\project_templates\\git_commit_message.txt
+[diff]
+	tool = vimdiff
+	guitool = vscode
+[difftool]
+	prompt = False
+[difftool "vimdiff"]
+	cmd = "vimdiff '$LOCAL' '$REMOTE'" 
+[difftool "vscode"]
+	cmd = "code --wait --diff $LOCAL $REMOTE"
+[gui]
+	recentrepo = C:/Dev/Misc/project_templates
+[init]
+	defaultBranch = main
+[merge]
+	tool = vimdiff
+	guitool = vscode
+[mergetool]
+	prompt = False
+[mergetool "vimdiff"]
+	cmd = "vimdiff '$BASE' '$LOCAL' '$REMOTE' '$MERGED'"
+[mergetool "vscode"]
+	cmd = "code --wait --diff '$BASE' '$LOCAL' '$REMOTE' '$MERGED'"
+[user]
+	name = Eddie Soto
+	email = hotwheeleddie8@gmail.com
